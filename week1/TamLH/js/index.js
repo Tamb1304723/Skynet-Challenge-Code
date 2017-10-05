@@ -20,7 +20,6 @@ $(document).ready(function() {
     $('.submit').on('click', function() {
         // for (i = 0; i < array.length; i++) {
         //     // console.log(array[i].match(pattern));
-        //     // $('#output').append("<div>" + array[i].match(pattern) + "</div>");
         //
         // }
         if (array.length !== 0){
@@ -36,6 +35,8 @@ $(document).ready(function() {
                     if (item.toUpperCase().search(item2) != -1) {
 
                         console.log(item);
+                        $('#output').append("<div>" + item + "</div>");
+
                     }
                 })
             })
